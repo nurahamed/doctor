@@ -103,8 +103,16 @@ const dDetails = [
 // gpt code
 let users = [];
 
-function printD(data) {
-  users = data.map(user => {
+const search = () => {
+  let searchInput = document.getElementById("search-input").value.toLowerCase();
+
+  // Clear the userCardContainer before populating with new search results
+  userCardContainer.innerHTML = '';
+
+  users = dDetails.filter(user => {
+    const userText = user.name.toLowerCase() + user.speciality.toLowerCase();
+    return userText.includes(searchInput);
+  }).map(user => {
     const card = userCardTemplate.content.cloneNode(true).children[0];
     const nameD = card.querySelector("[data-name]");
     const specialityD = card.querySelector("[data-work]");
@@ -118,20 +126,45 @@ function printD(data) {
     userCardContainer.append(card);
     return { name: user.name, speciality: user.speciality, element: card };
   });
-  
-  // Add the event listener to filter users when data is loaded
-  searchInput.addEventListener("input", e => {
-    let value = e.target.value.toLowerCase();
-    users.forEach(user => {
-      let userText = user.name.toLowerCase() + user.speciality.toLowerCase();
-      let isVisible = userText.includes(value);
-      user.element.classList.toggle("hide", !isVisible);
-    });
-    console.log(users);
+
+  console.log(users);
+};
+
+function printD(data) {
+  data.forEach(user => {
+    const card = userCardTemplate.content.cloneNode(true).children[0];
+    const nameD = card.querySelector("[data-name]");
+    const specialityD = card.querySelector("[data-work]");
+    const doctorImgSrc = card.querySelector("[data-img]");
+
+    let imageUrl = user.img;
+    doctorImgSrc.setAttribute("src", imageUrl);
+    nameD.textContent = user.name;
+    specialityD.textContent = user.speciality;
+
+    userCardContainer.append(card);
+    users.push({ name: user.name, speciality: user.speciality, element: card });
   });
 }
 
-users = printD(dDetails); // Call printD to populate the users array
+// Call printD to populate the data when the page is loaded
+printD(dDetails);
+
+// Attach the search function to the input field's input event
+document.getElementById("search-input").addEventListener("input", search);
+
+
+// Call printD to populate the users array
+// Add the event listener to filter users when data is loaded
+// searchInput.addEventListener("input", e => {
+//   let value = e.target.value.toLowerCase();
+//   users.forEach(user => {
+//     let userText = user.name.toLowerCase() + user.speciality.toLowerCase();
+//     let isVisible = userText.includes(value);
+//     user.element.classList.toggle("hide", !isVisible);
+//   });
+//   console.log(users);
+// });
 
 // gpt code
 
