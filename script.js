@@ -35,7 +35,7 @@ const dDetails = [
   {
     id: 5,
     name: "Sabina",
-    img: "dimg/d5.jpg",
+    img: "dimg/doc-3.png",
     speciality: "Endocrinologist",
   },
   {
@@ -52,8 +52,8 @@ const dDetails = [
   },
   {
     id: 8,
-    name: "Jone Doe",
-    img: "dimg/d8.jpg",
+    name: "Riyaj",
+    img: "dimg/doc-1.png",
     speciality: "Neurologists",
   },
   {
@@ -65,7 +65,7 @@ const dDetails = [
   {
     id: 10,
     name: "Jone Doe",
-    img: "dimg/d10.jpg",
+    img: "dimg/d8.jpg",
     speciality: "Orthopedic",
   },
   {

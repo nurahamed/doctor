@@ -22,6 +22,7 @@
 }
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
   height: 100vh;
@@ -521,13 +522,16 @@ button[class^="navbar"]:hover {
     margin-right: 16px;
     font-size: 17px;
     border-radius: 5px;
+    width: 60%;
+    caret-color: rgb(226, 55, 169);
   }
-  #search{
+
+  /* #search{
     padding: 8px;
     background-color: teal;
     border-radius: 5px;
     color: white;
-  }
+  } */
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
@@ -593,8 +597,8 @@ button[class^="navbar"]:hover {
     -ms-flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
 }
 
 .doctor {
@@ -847,9 +851,12 @@ button[class^="navbar"]:hover {
   .border-line {
     width: 405px;
   }
+
 }
 
 @media (min-width: 768px) {
+
+  
   .header-inner-left h1 {
     font-size: 5.7rem;
   }
