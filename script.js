@@ -6,7 +6,7 @@ const userCardTemplate = document.querySelector("[data-user-template]");
 const userCardContainer = document.querySelector("[user-card-container]");
 const searchInput = document.getElementById("search-input");
 
-// const q = document.getElementsByTagName
+//doctor details
 const dDetails = [
   {
     id: 1,
@@ -100,7 +100,7 @@ const dDetails = [
   },
 ];
 
-// gpt code
+// search and display code
 let users = [];
 
 const search = () => {
@@ -152,22 +152,10 @@ printD(dDetails);
 
 // Attach the search function to the input field's input event
 document.getElementById("search-input").addEventListener("input", search);
+// search and display code end here
 
 
-// Call printD to populate the users array
-// Add the event listener to filter users when data is loaded
-// searchInput.addEventListener("input", e => {
-//   let value = e.target.value.toLowerCase();
-//   users.forEach(user => {
-//     let userText = user.name.toLowerCase() + user.speciality.toLowerCase();
-//     let isVisible = userText.includes(value);
-//     user.element.classList.toggle("hide", !isVisible);
-//   });
-//   console.log(users);
-// });
-
-// gpt code
-
+// navbar when small screen
 navbarShowBtn.addEventListener("click", function () {
   navbarCollapseDiv.classList.add("navbar-show");
 });
