@@ -34,13 +34,13 @@ const dDetails = [
   },
   {
     id: 5,
-    name: "Sabina",
+    name: "Sana",
     img: "dimg/doc-3.png",
     speciality: "Endocrinologist",
   },
   {
     id: 6,
-    name: "Neha Bansali",
+    name: "Neha khan",
     img: "dimg/d6.jpg",
     speciality: "ENT Specialists",
   },
@@ -64,39 +64,45 @@ const dDetails = [
   },
   {
     id: 10,
-    name: "Jone Doe",
+    name: "Priyanka",
     img: "dimg/d8.jpg",
     speciality: "Orthopedic",
   },
   {
     id: 11,
-    name: "Jone Doe",
+    name: "Ahamed",
     img: "dimg/d11.jpg",
     speciality: "Pediatrician",
   },
   {
     id: 12,
-    name: "Jone Doe",
+    name: "Deep",
     img: "dimg/d12.jpg",
     speciality: "Psychiatrists",
   },
   {
     id: 13,
-    name: "Jone Doe",
+    name: "Suman",
     img: "dimg/d13.jpg",
     speciality: "Pulmonologists",
   },
   {
     id: 14,
-    name: "Jone Doe",
+    name: "Pankoj",
     img: "dimg/d14.jpg",
     speciality: "Radiologist",
   },
   {
     id: 15,
-    name: "Jone Doe",
+    name: "Munna",
     img: "dimg/d15.jpg",
     speciality: "Veterinarian",
+  },
+  {
+    id: 16,
+    name: "Neha",
+    img: "dimg/d3.jpg",
+    speciality: "Dentist",
   },
 ];
 
