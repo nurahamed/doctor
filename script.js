@@ -106,7 +106,7 @@ const dDetails = [
   },
 ];
 
-// search and display code
+// search and display doctor code
 let users = [];
 
 const search = () => {
@@ -135,6 +135,7 @@ const search = () => {
 
   console.log(users);
 };
+// search and display doctor code end here
 
 function printD(data) {
   data.forEach(user => {
@@ -158,7 +159,6 @@ printD(dDetails);
 
 // Attach the search function to the input field's input event
 document.getElementById("search-input").addEventListener("input", search);
-// search and display code end here
 
 
 // navbar when small screen

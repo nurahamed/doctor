@@ -252,29 +252,42 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga.
               </p>
             </div>
-            <form>
+            <form
+            action="https://formspree.io/f/xrgwjaar"
+            method="POST"
+            >
               <div class="form-element">
                 <input
                   type="text"
                   class="form-control"
                   placeholder="Your name"
+                  name="username"
+                  required
+                  autocomplete="off"
                 />
               </div>
               <div class="form-element">
                 <input
                   type="email"
+                  name="email"
                   class="form-control"
                   placeholder="Your email"
+                  required
+                  autocomplete="off"
                 />
               </div>
               <div class="form-element">
                 <textarea
+                name="textarea"
                 rows="5"
                   placeholder="Your Message"
                   class="form-control"
+                  required
+                  min="8"
+                  autocomplete="off"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-white btn-submit">
+              <button type="submit" id="submit" name="submit" class="btn btn-white btn-submit">
                 <i class="fas fa-arrow-right"></i> Send Message
               </button>
             </form>
