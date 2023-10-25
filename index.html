@@ -79,7 +79,7 @@
 
     <main>
       <!-- about section -->
-      <section id="about" class="about py">
+      <section id="about" class="about py-1">
         <div class="about-inner">
           <div class="container grid">
             <div class="about-left text-center">
@@ -121,7 +121,7 @@
       <!-- end of banner one -->
 
       <!-- services section -->
-      <section id="services" class="services py">
+      <section id="services" class="services py-1">
         <div class="container">
           <div class="section-head text-center">
             <h2 class="lead">The Best Doctor gives the least medicines</h2>
@@ -188,14 +188,20 @@
       </section>
       <!-- end of services section -->
   
-
+      <div class="line-art flex">
+        <div></div>
+        <img src="images/4-dots.png" />
+        <div></div>
+      </div>
       <!-- doctors section -->
-      <section id="doc-panel" class="doc-panel py">
+      <section id="doc-panel" class="doc-panel py-1">
         <div class="container">
           <div class="section-head">
             <h2 style="text-align: center;" class="lead">Our Doctor Panel</h2>
             <div class="topnav">
-              <input type="text" autofocus  id="search-input" data-search placeholder="Search doctor by name or speciality" onkeyup="search()">
+              <input type="text"  id="search-input" data-search placeholder="Search doctor by name or speciality" onkeyup="search()" > 
+              <i class="fa-solid fa-magnifying-glass"></i>
+             
               <!-- <button id="search" type="submit">Search</button> -->
             </div>
             
@@ -221,9 +227,13 @@
       </section>
       <!-- Doctordata end here -->
 
-
+      <div class="line-art flex">
+        <div></div>
+        <img src="images/4-dots.png" />
+        <div></div>
+      </div>
       <!-- contact section -->
-      <section id="contact" class="contact py">
+      <section id="contact" class="contact py-1">
         <div class="container grid">
           <div class="contact-left">
             <iframe
@@ -259,7 +269,7 @@
               </div>
               <div class="form-element">
                 <textarea
-                  rows="5"
+                rows="5"
                   placeholder="Your Message"
                   class="form-control"
                 ></textarea>
@@ -277,7 +287,7 @@
     <!-- footer  -->
     <footer id="footer" class="footer text-center">
       <div class="container">
-        <div class="footer-inner text-white py grid">
+        <div class="footer-inner text-white py-1 grid">
           <div class="footer-item">
             <h3 class="footer-head">about us</h3>
             <div class="icon">
